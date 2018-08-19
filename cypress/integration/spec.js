@@ -36,7 +36,8 @@ const frameworkFolders = {
   'angular-dart': 'angular-dart/web',
   'chaplin-brunch': 'chaplin-brunch/public',
   duel: 'duel/www',
-  vanilladart: 'vanilladart/build/web'
+  vanilladart: 'vanilladart/build/web',
+  keetjs: 'keetjs/build'
 }
 const getExampleFolder = framework => frameworkFolders[framework] || framework
 
@@ -56,7 +57,8 @@ const noLocalStorageCheck = {
   puremvc: true,
   'typescript-backbone': true,
   enyo_backbone: true,
-  foam: true
+  foam: true,
+  keetjs: true
 }
 
 const noLocalStorageSpyCheck = {
@@ -106,7 +108,8 @@ const safeBlur = $el => {
 
 // Some frameworks need to avoid runtime determination of selector type.
 const usesIDSelectors = {
-  polymer: false
+  polymer: false,
+  keetjs: false
 }
 
 const title = `TodoMVC - ${framework}`

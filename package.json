@@ -20,7 +20,8 @@
     "cy:run:record": "npm run cy:run -- --record",
     "test": "run-p --race server cy:run",
     "test:record": "start-server-and-test server http://localhost:8000 cy:run:record",
-    "test:all": "node tests/cya.js"
+    "test:all": "node tests/cya.js",
+    "tt": "cypress open --env framework=keetjs"
   },
   "dependencies": {
     "express": "^4.10.0"
